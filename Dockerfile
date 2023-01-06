@@ -1,4 +1,4 @@
-FROM rocm/rocm-terminal
+FROM rocm/rocm-terminal:5.4
 ENV LD_LIBRARY_PATH=/opt/rocm/lib
 ADD https://github.com/xuhuisheng/rocm-gfx803/releases/download/rocm541/rocblas_2.46.0.50401-84.20.04_amd64.deb /tmp
 RUN sudo dpkg -i /tmp/rocblas_2.46.0.50401-84.20.04_amd64.deb
