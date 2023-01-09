@@ -1,3 +1,3 @@
 # rocm-gfx803-docker
 
-WIP
+[rocm-terminal](https://github.com/RadeonOpenCompute/ROCm-docker) with gfx803 support
