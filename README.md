@@ -1,9 +1,9 @@
 # rocm-gfx803-docker
 
-[rocm-terminal](https://github.com/RadeonOpenCompute/ROCm-docker) with gfx803 support made possible by [rocm-gfx803](https://github.com/xuhuisheng/rocm-gfx803). Hosted on [Docker Hub](https://hub.docker.com/r/puzzlemoondev/rocm-gfx803).
+[rocm-terminal](https://hub.docker.com/r/rocm/rocm-terminal) with gfx803 support made possible by [rocm-gfx803](https://github.com/xuhuisheng/rocm-gfx803). Hosted on [Docker Hub](https://hub.docker.com/r/puzzlemoondev/rocm-gfx803).
 
 ## How to use
-See rocm-terminal's docs for how to run the docker image.
+See [rocm-docker](https://github.com/RadeonOpenCompute/ROCm-docker) for how to run the docker image.
 
 ## Installed packages
 Packages are pulled from https://github.com/xuhuisheng/rocm-gfx803/releases.
