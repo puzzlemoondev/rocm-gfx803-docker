@@ -30,7 +30,7 @@ jobs:
           tags: puzzlemoondev/rocm-gfx803:latest
           cache-from: type=gha
           cache-to: type=gha,mode=max
-      - name: Build and push gfx803
+      - name: Build and push gfx803 diff-svc
         uses: docker/build-push-action@v3
         with:
           target: rocm-gfx803-diff-svc
