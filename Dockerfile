@@ -25,24 +25,24 @@ RUN cp ../environment.yml . && \
     conda env update -q
 RUN mkdir checkpoints && \
     cd checkpoints && \
-    wget https://github.com/justinjohn0306/diff-svc/releases/download/models/0102_xiaoma_pe.zip && \
+    wget -q https://github.com/justinjohn0306/diff-svc/releases/download/models/0102_xiaoma_pe.zip && \
     unzip 0102_xiaoma_pe.zip && \
     rm 0102_xiaoma_pe.zip && \
-    wget https://github.com/justinjohn0306/diff-svc/releases/download/models/hubert.zip && \
+    wget -q https://github.com/justinjohn0306/diff-svc/releases/download/models/hubert.zip && \
     unzip hubert.zip && \
     rm hubert.zip && \
-    wget https://github.com/openvpi/vocoders/releases/download/nsf-hifigan-v1/nsf_hifigan_20221211.zip && \
+    wget -q https://github.com/openvpi/vocoders/releases/download/nsf-hifigan-v1/nsf_hifigan_20221211.zip && \
     unzip nsf_hifigan_20221211.zip && \
     rm nsf_hifigan_20221211.zip
 RUN mkdir pretrain && \
     cd pretrain && \
-    wget https://huggingface.co/Erythrocyte/Diff-SVC_Pre-trained_Models/resolve/main/base_44.1KHz_384_20_110k.zip && \
+    wget -q https://huggingface.co/Erythrocyte/Diff-SVC_Pre-trained_Models/resolve/main/base_44.1KHz_384_20_110k.zip && \
     unzip base_44.1KHz_384_20_110k.zip -d base_44.1KHz_384_20_110k && \
     rm base_44.1KHz_384_20_110k.zip && \
-    wget https://huggingface.co/Erythrocyte/Diff-SVC_Pre-trained_Models/resolve/main/base_44.1KHz_384_20_94k.zip && \
+    wget -q https://huggingface.co/Erythrocyte/Diff-SVC_Pre-trained_Models/resolve/main/base_44.1KHz_384_20_94k.zip && \
     unzip base_44.1KHz_384_20_94k.zip -d base_44.1KHz_384_20_94k && \
     rm base_44.1KHz_384_20_94k.zip && \
-    wget https://huggingface.co/Erythrocyte/Diff-SVC_Pre-trained_Models/resolve/main/base_44.1KHz_384_20_50k.zip && \
+    wget -q https://huggingface.co/Erythrocyte/Diff-SVC_Pre-trained_Models/resolve/main/base_44.1KHz_384_20_50k.zip && \
     unzip base_44.1KHz_384_20_50k.zip -d base_44.1KHz_384_20_50k && \
     rm base_44.1KHz_384_20_50k.zip
 CMD ["bash", "-l"]
