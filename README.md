@@ -17,7 +17,7 @@ See [rocm-docker](https://github.com/RadeonOpenCompute/ROCm-docker) for how to r
 
 ### rocm-gfx803
 
-Packages compiled with gfx803 support are pulled from https://github.com/xuhuisheng/rocm-gfx803/releases.
+Packages compiled with gfx803 support are pulled from [rocm-gfx803](https://github.com/xuhuisheng/rocm-gfx803/releases).
 
 - torch-1.11.0a0+git503a092-cp38-cp38-linux_x86_64.whl
 - torchvision-0.12.0a0+2662797-cp38-cp38-linux_x86_64.whl
