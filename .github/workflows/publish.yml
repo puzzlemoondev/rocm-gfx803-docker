@@ -22,8 +22,19 @@ jobs:
         with:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
-      - name: Build and push
+      - name: Build and push gfx803
         uses: docker/build-push-action@v3
         with:
+          target: rocm-gfx803
           push: true
           tags: puzzlemoondev/rocm-gfx803:latest
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
+      - name: Build and push gfx803
+        uses: docker/build-push-action@v3
+        with:
+          target: rocm-gfx803-diff-svc
+          push: true
+          tags: puzzlemoondev/rocm-gfx803-diff-svc:latest
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
