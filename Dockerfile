@@ -45,4 +45,5 @@ RUN mkdir pretrain && \
     wget -q https://huggingface.co/Erythrocyte/Diff-SVC_Pre-trained_Models/resolve/main/base_44.1KHz_384_20_50k.zip && \
     unzip base_44.1KHz_384_20_50k.zip -d base_44.1KHz_384_20_50k && \
     rm base_44.1KHz_384_20_50k.zip
+
 CMD ["bash", "-l"]
