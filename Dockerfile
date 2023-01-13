@@ -18,7 +18,7 @@ RUN sudo ln -s /opt/conda/etc/profile.d/conda.sh /etc/profile.d/conda.sh && \
     echo "conda activate gfx803" >> ~/.bashrc
 
 FROM rocm-gfx803 as rocm-gfx803-diff-svc
-RUN git clone https://github.com/prophesier/diff-svc.git
+RUN git clone https://github.com/puzzlemoondev/diff-svc.git
 WORKDIR /home/rocm-user/diff-svc
 RUN cp ../environment.yml . && \
     echo '    - -r requirements_short.txt' >> environment.yml && \
