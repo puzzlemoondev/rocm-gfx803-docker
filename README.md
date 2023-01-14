@@ -1,5 +1,7 @@
 # rocm-gfx803-docker
 
+[![Publish](https://github.com/puzzlemoondev/rocm-gfx803-docker/actions/workflows/publish.yml/badge.svg)](https://github.com/puzzlemoondev/rocm-gfx803-docker/actions/workflows/publish.yml)
+
 [rocm-terminal](https://hub.docker.com/r/rocm/rocm-terminal) with gfx803 support made possible by [rocm-gfx803](https://github.com/xuhuisheng/rocm-gfx803).
 
 ## Flavors
